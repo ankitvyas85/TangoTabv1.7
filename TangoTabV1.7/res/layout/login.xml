@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/tangotab"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bgsignin"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bgtextbox"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:textStyle="bold" >
+
+            <requestFocus />
+        </EditText>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bgtextbox"
+            android:ems="10"
+            android:hint="Password"
+            android:paddingLeft="5dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:textStyle="bold" 
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/forgetpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:text="Forgot Password?"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@drawable/forgotpasswordselector"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/bgsignin2"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Don't Have a TangoTab Account Yet?"
+            android:textColor="@android:color/white" 
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+			android:layout_gravity="center"
+            android:background="@drawable/smallgreenselector"
+					        android:text="Sign up"
+					        android:textStyle="bold"
+					        android:textSize="18dp"
+					        android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>

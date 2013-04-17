@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Home!</string>
+    <string name="googleMapsAPIKey">0WiW6dSAmbv4A7y3cEiGAyDMCeKqQKhf0c5JV8w</string>
+	<!-- 
+			production key 04BWcLhr-PKRnexVRf5tlNO_spyoyUm26DR-tlg
+			dev release key 0Eir-hURVvC88vHooVMZax8X9KW9KwtvRcGmeNw
+			debug key 0Eir-hURVvC_RbV62a9_OaCdp9l27ZuMm17xYHg
+	-->
+    <string name="app_name">TangoTab</string>
+    <string-array name="distance">
+    <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>1000</item>
+       
+    
+    </string-array>
+    <string name="Home_Zip">Home Zip / Postal</string>
+    <string name="Work_Zip">Work Zip / Postal</string>
+    <string name="Facebook">Facebook Sharing</string>
+    <string name="Twitter">Twitter Sharing</string>
+    <string name="Home">Home Zip / Postal</string>
+    <string name="Work">Work Zip / Postal</string><string name="pulltorefreshpulllabel">Pull to refresh...</string><string name="pulltorefreshreleaselabel">Release to refresh...</string><string name="pulltorefreshrefreshinglabel">Loading...</string>
+    <string name="termcondition">Clicking Sign-Up Certifies That You Have Read &amp; Agree</string>
+    <string name="termcondition2">To The Privacy Policy &amp; Terms Of Use Of TangoTab.</string>
+    <color name="orange">#FF8C00</color>
+    <color name="Green">#1E9E1E</color>
+</resources>

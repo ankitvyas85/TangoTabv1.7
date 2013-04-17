@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topMenuRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <RelativeLayout
+            android:id="@+id/mainMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmenu"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/meMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mainMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMeMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topme_on"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nearmeMenuRL"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/meMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topNearmeMenuMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/toptangotab"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mapMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/nearmeMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMapMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmap"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mapMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topSearchMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topsearch"
+                android:clickable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/scrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnMyOffers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/greenbtnselector" 
+                    android:text="My Offers"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:clickable="true" />
+
+                <Button
+                    android:id="@+id/btnMySettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/greenbtnselector" 
+                    android:text="My Settings"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/myphilRL"
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/myphil_bak" >
+
+                <TextView
+                    android:id="@+id/myphilText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="4dp"
+                    android:text="My Philanthropy"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/myphilLineView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/myphilText"
+                    android:background="#bebebe" />
+
+                <LinearLayout
+                    android:id="@+id/myphilMeTangoRL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myphilLineView"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <View
+                            android:id="@+id/myphilMeLineView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/myphil_linesmall" />
+
+                        <TextView
+                            android:id="@+id/myphilMeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilMeLineView"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:text="You Have Fed"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <!--
+                             <TextView
+                            android:id="@+id/myphilNumMeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilMeTextView"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="15sp" 
+                            android:text="klldkflgk"/>
+                        -->
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilMeLineView"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/linearLayoutMe"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/myphil_linesmall" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <View
+                            android:id="@+id/myphilTangoLineView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/myphil_linebig" />
+
+                        <TextView
+                            android:id="@+id/myphilTangoTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilTangoLineView"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:text="TangoTab Has Fed"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <!--
+                             <TextView
+                            android:id="@+id/myphilNumTangoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilTangoTextView"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                        -->
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayoutPhilNumb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilTangoTextView"
+                            android:layout_centerInParent="true" >
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/LinearLayoutPhilNumb"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/myphil_linebig" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/myphilFriendNetwrkRL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myphilMeTangoRL"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <View
+                            android:id="@+id/myphilFriendLineView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/myphil_linesmall" />
+
+                        <TextView
+                            android:id="@+id/myphilFriendTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilFriendLineView"
+                            android:layout_centerHorizontal="true"
+                            android:text="Your Friends"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/myphilFriendTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilFriendTextView"
+                            android:layout_centerHorizontal="true"
+                            android:text="Have Fed"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <!--
+                             <TextView
+                            android:id="@+id/myphilNumFriendText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilFriendTextView2"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                        -->
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayoutPhilNumbFriendText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilFriendTextView2"
+                            android:layout_centerInParent="true" >
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/LinearLayoutPhilNumbFriendText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/myphil_linesmall" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <View
+                            android:id="@+id/myphilNetwrkLineView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/myphil_linebig" />
+
+                        <TextView
+                            android:id="@+id/myphilNetwrkTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilNetwrkLineView"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:text="Your Network"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/myphilNetwrkTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilNetwrkTextView"
+                            android:layout_centerHorizontal="true"
+                            android:text="Could Feed"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <!--
+                             <TextView
+                            android:id="@+id/myphilNumNetwrkText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilNetwrkTextView2"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                        -->
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayoutMyPhilNetwrk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myphilNetwrkTextView2"
+                            android:layout_centerInParent="true" >
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/LinearLayoutMyPhilNetwrk"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/myphil_linebig" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sharemyphilanthropy"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bgshareheader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:text="Share My Philanthropy"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/btnTweeterShare"
+                        android:layout_width="47dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/tweeterselector"
+                        android:clickable="true" />
+
+                    <Button
+                        android:id="@+id/btnFacebookShare"
+                        android:layout_width="47dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toRightOf="@id/btnTweeterShare"
+                        android:background="@drawable/facebookselector"
+                        android:clickable="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:id="@+id/ivUpscaleImg"
+      	android:scaleType="fitXY"
+        />
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:gravity="center"
+    android:id="@+id/tvName"
+    android:paddingBottom="2dp"
+    android:background="#66000000"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:layout_alignBottom="@+id/ivUpscaleImg"
+    />
+</RelativeLayout>

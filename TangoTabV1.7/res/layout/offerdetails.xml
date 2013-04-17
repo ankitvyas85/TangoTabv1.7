@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+   	android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topMenuRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <RelativeLayout
+            android:id="@+id/mainMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmenu"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/meMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mainMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMeMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topme"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nearmeMenuRL"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/meMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topNearmeMenuMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/toptangotab_on"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mapMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/nearmeMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMapMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmap"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mapMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topSearchMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topsearch"
+                android:clickable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/detailsContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topMenuRL"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btnbackselector"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@drawable/btnnextselector"
+            android:clickable="true" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/lineseparater1"
+        android:layout_below="@id/detailsContent"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:src="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/offerDetails"
+        android:layout_below="@id/lineseparater1"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal" > 
+
+        
+<!-- 102 '''''''' old -> 118 -->
+
+         <!-- 160 * 97 -->
+
+<FrameLayout
+    android:layout_width="135dp"
+    android:layout_height="130dp"
+    android:layout_weight="0.45" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:scaleType="fitXY"/>
+    <LinearLayout  android:layout_width="wrap_content"
+        android:id="@+id/imageLayout"
+        android:layout_marginTop="2dip" 
+        android:layout_height="wrap_content"  android:background="@drawable/bg1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+  		android:layout_gravity="left"
+        android:id="@+id/myImageViewText"
+   		android:textColor="@android:color/black"
+   		android:textStyle="bold"
+   		android:textSize="12sp"
+ 		android:paddingLeft="3dip"
+        />
+    </LinearLayout>
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="fill_parent"
+    android:layout_height="15dp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:text="Name" 
+    android:textSize="14dp"
+    android:textColor="@android:color/white"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="5dp"/>
+    
+</FrameLayout>
+
+        <RelativeLayout android:id="@+id/OfferDetailRl"
+            android:layout_width="146dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/bglist"
+            android:orientation="vertical"
+            android:paddingLeft="8dp" >
+
+            <TextView
+                android:id="@+id/businessName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Dairy Queen"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+           <TextView
+                android:id="@+id/dealname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/businessName"
+                android:maxLines="2"
+                android:text="Buy one meal &amp; Get one 50% off."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textColor="#000000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lineseparater2"
+        android:layout_below="@id/offerDetails"
+    	android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:src="@android:color/white" />
+    
+    <LinearLayout
+        android:id="@+id/claimmLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/lineseparater"    
+            android:layout_marginBottom="4dp"
+            android:layout_width="fill_parent"
+	        android:layout_height="2dp"
+	        android:src="@android:color/white"  />
+
+        <Button
+            android:id="@+id/clmwantit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Claim Now"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/greenbtnselector"
+            android:clickable="true" />
+  </LinearLayout>
+
+   <ScrollView
+       android:id="@+id/scrollView1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/lineseparater2" 
+       android:layout_above="@id/claimmLayout">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:orientation="vertical" >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:orientation="vertical" >
+
+                   <TextView
+                       android:id="@+id/image1"
+                       android:layout_width="fill_parent"
+                       android:layout_height="5dp"
+                       android:background="@drawable/bgheader2" />
+
+                   <RelativeLayout
+                       android:id="@+id/bgtermsmiddle"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/bgmiddle"
+                       android:orientation="vertical" >
+
+                       <TextView
+                           android:id="@+id/dealnamebold"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="4dp"
+                           android:layout_marginRight="4dp"
+                           android:gravity="center"
+                           android:text="Buy One &amp; Get One 50% Off Buy One &amp; Get One 50% Off"
+                           android:textColor="#000000"
+                           android:textSize="17dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/dealdate"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/dealnamebold"
+                           android:layout_marginLeft="4dp"
+                           android:layout_marginRight="4dp"
+                           android:gravity="center"
+                           android:text="Monday, November 1"
+                           android:textColor="#000000"
+                           android:textSize="15dp" />
+
+                       <TextView
+                           android:id="@+id/dealtime"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/dealdate"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginLeft="4dp"
+                           android:layout_marginRight="4dp"
+                           android:gravity="center"
+                           android:text="4:00PM - 10:00PM"
+                           android:textColor="#000000"
+                           android:textSize="15dp" />
+                   </RelativeLayout>
+
+                   <TextView
+                       android:id="@+id/image2"
+                       android:layout_width="fill_parent"
+                       android:layout_height="2dp"
+                       android:background="@drawable/greyline" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/getDirectionsLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/bgdirectionselector"
+                   android:gravity="center_vertical"
+                   android:clickable="true"
+                   android:orientation="vertical" >
+
+                   <TextView
+                       android:id="@+id/getDirections"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="50dp"      
+                       android:text="Get Directions"
+                       android:textColor="#000000"
+                       android:textSize="15dp" />
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/image3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="2dp"
+                   android:background="@drawable/greyline" />
+
+               <LinearLayout
+                   android:id="@+id/restPhoneLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/bgphoneselector"
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal" >
+
+                   <TextView
+                       android:id="@+id/phonelabel"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="50dp"
+                       android:text="Call To: "
+                       android:textColor="#000000"
+                       android:textSize="15dp" />
+
+                   <TextView
+                       android:id="@+id/restPhone"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:clickable="true"
+                       android:text=""
+                       android:textColor="@drawable/textselector"
+                       android:textSize="15dp" />
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/image4"
+                   android:layout_width="fill_parent"
+                   android:layout_height="2dp"
+                   android:background="@drawable/greyline" />
+
+               <LinearLayout
+                   android:id="@+id/addToCalendarLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/bgcalendarselector"
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal" >
+
+                   <TextView
+                       android:id="@+id/addToCalendar"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="50dp"
+                       android:text="Add To Calendar"
+                       android:textColor="#000000"
+                       android:textSize="15dp" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+           <LinearLayout
+              android:id="@+id/shareDetail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/sharemyphilanthropy"
+               android:orientation="vertical"
+               android:textColor="#000000">
+
+               <TextView
+                    android:id="@+id/bgshareheader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:text="Share This Offer"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+               
+               <RelativeLayout
+                    android:id="@+id/bgsharemiddle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@id/bgshareheader"
+                    android:layout_marginTop="12dp">
+               
+
+                   <Button
+                       android:id="@+id/btnTweeterShare"
+                       android:layout_width="47dp"
+                       android:layout_height="45dp"
+                       android:layout_marginRight="8dp"
+                       android:background="@drawable/tweeterselector"
+                       android:clickable="true" />
+
+                   <Button
+                       android:id="@+id/btnFacebookShare"
+                       android:layout_width="47dp"
+                       android:layout_height="45dp"
+                       android:layout_toRightOf="@id/btnTweeterShare"
+                       android:layout_marginRight="8dp"
+                       android:background="@drawable/facebook"
+                       android:clickable="true" />
+               </RelativeLayout>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="vertical" >
+
+               
+               <TextView
+                    android:id="@+id/bgtermsheader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgheader"
+                    android:gravity="center"
+                    android:text="Terms And Conditions"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+               
+               <RelativeLayout
+                    android:id="@+id/bgtermsmiddle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgmiddle"
+                    android:layout_below="@+id/bgtermsheader"
+                    android:orientation="vertical">
+                <TextView
+            		android:id="@+id/dealrestrictions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="left"
+                    android:text="Terms And Conditions"
+                    android:textColor="#000000" 
+                    android:textSize="15dp"/>
+                </RelativeLayout>
+                <TextView
+            		android:id="@+id/bgtermsfooter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="7dp"
+                    android:background="@drawable/bgfooter"/>
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

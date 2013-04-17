@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topMenuRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <RelativeLayout
+            android:id="@+id/mainMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmenu"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/meMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mainMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMeMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topme_on"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nearmeMenuRL"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/meMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topNearmeMenuMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/toptangotab"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mapMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/nearmeMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmap"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mapMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topSearchMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topsearch"
+                android:clickable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background"
+        android:orientation="vertical" 
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/edittextsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/searchbg"
+            android:hint="Search"
+            android:textSize="15dp"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:text=""/>
+        <LinearLayout 
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            android:background="@android:color/white">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header" />
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myoffers_top" >
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/mapclick" />
+
+        <Button
+            android:id="@+id/showmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/showmore_bt"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progressBarMyOffers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/emptylist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="You have not selected any offers. Please search for a offer and reserve it."
+            android:textColor="#8A8A8A"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ffffff"
+            android:dividerHeight="2dp"
+            android:cacheColorHint="#00000000"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF" />
+
+    <RelativeLayout
+            android:id="@+id/statusbarFed"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/statusbar_fed"
+            android:gravity="center"
+            android:clickable="true" >
+    <ImageView
+        android:id="@+id/cup"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/cup"
+        android:layout_marginRight="4dp"/>
+    <TextView
+        android:id="@+id/statusbarFedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/cup"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+</LinearLayout>

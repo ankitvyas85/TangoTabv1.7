@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/doneBtnRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/smallgreenselector"
+	        android:text="Done"
+	        android:textStyle="bold"
+	        android:textSize="16dp"
+	        android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/topWhiteBar"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/doneBtnRL"
+        android:background="@android:color/white" />
+
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/locWheelView"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/topWhiteBar"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp" />
+
+    <View
+        android:id="@+id/bottomWhiteBar"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/locWheelView"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/homeWorkZipRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomWhiteBar" >
+
+        <RelativeLayout
+            android:id="@+id/homezipRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/homeZipTextView"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:text="Alternate zip/postal"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" 
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/homeZip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="35dp"
+                android:hint="Add New"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/homeZipTextView"
+                android:background="@drawable/nearmebg"
+                android:textStyle="bold" 
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/workZip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:hint="Add New"
+                android:singleLine="true"
+                android:paddingLeft="35dp"
+                android:background="@drawable/nearmebg"
+                android:textStyle="bold" 
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/alternateZip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="35dp"
+                android:hint="Add New"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/homeZipTextView"
+                android:background="@drawable/nearmebg"
+                android:textStyle="bold" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/lineBar1"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/homezipRL"
+            android:background="@drawable/barline" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/barline" />
+    </RelativeLayout>
+
+</RelativeLayout>

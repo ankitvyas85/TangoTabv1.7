@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="map_button_width2">30dip</dimen>
+    <dimen name="map_button_height">20dip</dimen>
+</resources>

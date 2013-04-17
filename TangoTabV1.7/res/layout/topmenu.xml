@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/topMenuRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <RelativeLayout
+            android:id="@+id/mainMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmenu_on"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/meMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mainMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMeMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topme"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nearmeMenuRL"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/meMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topNearmeMenuMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/toptangotab"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mapMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/nearmeMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMapMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmap"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mapMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topSearchMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topsearch"
+                android:clickable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/facebookUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/topMenuRL" >
+
+        <ImageView
+            android:id="@+id/facebookImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/photoblank" />
+
+        <TextView
+            android:id="@+id/facebookUserNameText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/facebookImage"
+            android:singleLine="true"
+            android:text="User Name"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/facebookUserName" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mytangoTab"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/mytangotab_btn" />
+
+            <Button
+                android:id="@+id/myPhilBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/myphiloselector" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/shareTangoTabBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/sharetangotabselector" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/myOffersBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/myofferselector" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/mySettingsBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/settingselector" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/viewoffernear" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/currentLocationBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/currentlocationselector" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/workBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/workbtn"
+                android:paddingRight="80dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/homebtn"
+                android:paddingRight="65dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+            <Button
+                android:id="@+id/alternateBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/alternateselector"
+                android:paddingRight="40dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/editSearchBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/editsearchselector" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/mapview" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/mapViewOfferBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/mapviewofferselector" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/empty" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/privacyPolicyBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/privacyselector" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/termsAndCondBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/termselector" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barline" />
+
+            <Button
+                android:id="@+id/logOutBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/logoutselector" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/barline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/versionname" >
+
+<!--                 <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80dp"
+                    android:text="Version Info:"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" /> -->
+
+                <TextView
+                    android:id="@+id/versionInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+            
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

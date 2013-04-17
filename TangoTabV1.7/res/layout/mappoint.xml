@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topMenuRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <RelativeLayout
+            android:id="@+id/mainMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmenu"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/meMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mainMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMeMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topme"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nearmeMenuRL"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/meMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topNearmeMenuMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/toptangotab"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mapMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/nearmeMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topMapMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topmap_on"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchMenuRL"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/mapMenuRL"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/topSearchMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/topsearch"
+                android:clickable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/menuRL"
+        android:layout_below="@id/topMenuRL" >
+
+        <com.tangotab.map.overlay.TapControlledMapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:apiKey="@string/googleMapsAPIKey"
+            android:clickable="true"
+            android:enabled="true" />
+    </LinearLayout>
+
+</RelativeLayout>
